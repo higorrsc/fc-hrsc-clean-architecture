@@ -1,3 +1,5 @@
+import CreateCustomerUseCase from "./create.customer.usecase";
+
 const input = {
   name: "Jorge Hudson",
   address: {
@@ -20,7 +22,7 @@ const MockRepository = () => {
 describe("Unit test create customer use case", () => {
   it("should create a customer", async () => {
     const customerRepository = MockRepository();
-    const customerCreateUseCase = new CustomerCreateUseCase(customerRepository);
+    const customerCreateUseCase = new CreateCustomerUseCase(customerRepository);
 
     const output = await customerCreateUseCase.execute(input);
     expect(output).toEqual({
