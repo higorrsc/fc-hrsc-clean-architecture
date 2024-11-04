@@ -1,0 +1,12 @@
+{
+  "cSpell.words": ["customerid", "Higor", "sqlite"],
+  "editor.rulers": [80, 120],
+  "typescript.inlayHints.parameterNames.enabled": "all",
+  "javascript.inlayHints.parameterNames.enabled": "all",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "always",
+    "source.organizeImports": "always"
+  }
+}
