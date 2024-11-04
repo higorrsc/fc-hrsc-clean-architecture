@@ -1,5 +1,5 @@
 {
-  "cSpell.words": ["customerid", "Higor", "sqlite"],
+  "cSpell.words": ["customerid", "Higor", "sqlite", "usecase"],
   "editor.rulers": [80, 120],
   "typescript.inlayHints.parameterNames.enabled": "all",
   "javascript.inlayHints.parameterNames.enabled": "all",
