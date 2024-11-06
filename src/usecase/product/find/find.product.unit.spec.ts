@@ -5,6 +5,7 @@ const product = {
   name: "Product 1",
   price: 10,
 };
+
 const MockRepository = () => {
   return {
     find: jest.fn().mockReturnValue(Promise.resolve(product)),
@@ -13,6 +14,7 @@ const MockRepository = () => {
     update: jest.fn(),
   };
 };
+
 describe("Unit test find product use case", () => {
   it("should find a product", async () => {
     const productRepository = MockRepository();
