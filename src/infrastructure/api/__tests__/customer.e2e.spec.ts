@@ -23,20 +23,17 @@ describe("Customer API E2E tests", () => {
         },
       });
     expect(response.status).toBe(200);
-    // expect(response.body).toStrictEqual({
-    //   id: expect.any(String),
-    //   name: "John Doe",
-    //   address: {
-    //     street: "Street 1",
-    //     number: 1,
-    //     zip: "Zip 1",
-    //     city: "City 1",
-    //   },
-    // });
     expect(response.body.name).toBe("John Doe");
     expect(response.body.address.street).toBe("Street 1");
     expect(response.body.address.number).toBe(1);
     expect(response.body.address.zip).toBe("Zip 1");
     expect(response.body.address.city).toBe("City 1");
+  });
+
+  it("should not create a customer", async () => {
+    const response = await request(app).post("/customer").send({
+      name: "John Doe",
+    });
+    expect(response.status).toBe(500);
   });
 });
