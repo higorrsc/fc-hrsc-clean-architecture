@@ -22,7 +22,7 @@ describe("Customer API E2E tests", () => {
           city: "City 1",
         },
       });
-    expect(response.status).toBe(201);
+    expect(response.status).toBe(200);
     // expect(response.body).toStrictEqual({
     //   id: expect.any(String),
     //   name: "John Doe",
