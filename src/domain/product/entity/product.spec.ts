@@ -19,6 +19,8 @@ describe("Product unit tests", () => {
     }).toThrow("Price must be greater than zero");
   });
 
+  // teste que acumule dois erros ao mesmo tempo em Product.
+  // juntando o erro de Id e Name como campos obrigatórios
   it("should throw error when id and name are empty", () => {
     expect(() => {
       const product = new Product("", "", 1);
